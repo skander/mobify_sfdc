@@ -1,4 +1,4 @@
-view: user {
+view: _user {
   sql_table_name: salesforce_to_postgresql.sf_user ;;
 
   dimension: user_id__c {

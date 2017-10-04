@@ -7,9 +7,8 @@ include: *.view
 include: *.dashboard
 
 explore: account {
-  #   sql_always_where: |
-  #     NOT ${account.is_deleted}
-  fields: [ALL_FIELDS*]
+  sql_always_where: NOT ${account.is_deleted} ;;
+  fields: [ALL_FIELDS*,-account_owner.opportunity_set*, -creator.opportunity_set*]
 
   join: contact {
     sql_on: ${account.id} = ${contact.account_id} ;;
@@ -30,8 +29,8 @@ explore: account {
 }
 
 explore: lead {
-  #   sql_always_where: |
-  #     NOT ${lead.is_deleted}
+     sql_always_where: NOT ${lead.is_deleted} ;;
+
   join: lead_owner {
     from: user
     sql_on: ${lead.owner_id} = ${lead_owner.id} ;;
@@ -67,12 +66,16 @@ explore: lead {
 }
 
 explore: opportunity {
-  #   sql_always_where: |
-  #     NOT ${opportunity.is_deleted}
+    sql_always_where: NOT ${opportunity.is_deleted} ;;
+
   join: account {
     sql_on: ${opportunity.account_id} = ${account.id} ;;
     relationship: many_to_one
   }
+#   join: campaign {
+#     sql_on: ${opportunity.campaign_id} = ${campaign.id} ;;
+#     relationship: many_to_one
+#   }
 
   join: account_owner {
     from: user

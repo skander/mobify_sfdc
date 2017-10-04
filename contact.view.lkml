@@ -1,4 +1,4 @@
-view: contact {
+view: _contact {
   sql_table_name: salesforce_to_postgresql.sf_contact ;;
 
   dimension: jigsaw_contact_id {

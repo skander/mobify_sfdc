@@ -1,4 +1,4 @@
-view: lead {
+view: _lead {
   sql_table_name: salesforce_to_postgresql.sf_lead ;;
 
   dimension: id {
@@ -1689,6 +1689,10 @@ view: lead {
 
   measure: count {
     type: count
-    drill_fields: [id, name, last_name, first_name]
+    drill_fields: [id, name, last_name, first_name,country,vertical__c,company,number_of_employees]
+  }
+  measure: avg_annual_revenue {
+    type: average
+    sql: ${annual_revenue} ;;
   }
 }

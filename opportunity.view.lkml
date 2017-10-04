@@ -1,4 +1,4 @@
-view: opportunity {
+view: _opportunity {
   sql_table_name: salesforce_to_postgresql.sf_opportunity ;;
 
   dimension: id {

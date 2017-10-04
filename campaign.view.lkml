@@ -1,4 +1,4 @@
-view: campaign {
+view: _campaign {
   sql_table_name: salesforce_to_postgresql.sf_campaign ;;
 
   dimension: id {
@@ -268,5 +268,76 @@ view: campaign {
   measure: count {
     type: count
     drill_fields: [id, name]
+  }
+  measure: total_number_of_converted_leads {
+    type: sum
+    sql: ${number_of_converted_leads} ;;
+  }
+
+  #     filters:
+  #       campaign.is_deleted: 0
+
+  measure: total_number_of_leads {
+    type: sum
+    sql: ${number_of_leads} ;;
+  }
+
+  #     filters:
+  # #       campaign.is_deleted: 0
+
+  measure: total_number_of_opportunities {
+    type: sum
+    sql: ${number_of_opportunities};;
+
+    filters: {
+      field: campaign.is_deleted
+      value: "0"
+    }
+  }
+
+  measure: total_number_of_responses {
+    type: sum
+    sql: ${number_of_responses} ;;
+  }
+
+  #     filters:
+  #       campaign.is_deleted: 0
+
+  measure: total_number_of_won_opportunities {
+    type: sum
+    sql: ${total_amount_won_opportunities} ;;
+  }
+
+  #     filters:
+  #       campaign.is_deleted: 0
+
+  measure: total_number_sent {
+    type: sum
+    hidden: yes
+    sql: ${total_number_sent} ;;
+  }
+
+  #     filters:
+  #       campaign.is_deleted: 0
+
+  measure: total_actual_cost {
+    type: sum
+    sql: ${actual_cost} ;;
+  }
+
+  #     filters:
+  #       campaign.is_deleted: 0
+
+  measure: total_amount_all_opportunities {
+    type: sum
+    sql: ${amount_all_opportunities} ;;
+  }
+
+  #     filters:
+  #       campaign.is_deleted: 0
+
+  measure: total_amount_won_opportunities {
+    type: sum
+    sql: ${amount_won_opportunities} ;;
   }
 }
