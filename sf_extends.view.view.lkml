@@ -225,7 +225,7 @@ view: opportunity {
   dimension_group: created {
     type: time
     timeframes:[date,week,month,raw]
-    sql: ${TABLE}."createddate";;
+    sql: ${TABLE}."CreatedDate";;
   }
 
   dimension_group: close {
@@ -387,7 +387,7 @@ view: opportunity {
 
     filters: {
       field: opportunity.type
-      value: "\"New Business\""
+      value: "\"New Customer\""
     }
 
     #       is_deleted: 0
@@ -399,7 +399,7 @@ view: opportunity {
 
     filters: {
       field: opportunity.type
-      value: "\"New Business\""
+      value: "\"New Customer\""
     }
 
     #       is_deleted: 0
