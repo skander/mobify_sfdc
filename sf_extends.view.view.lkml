@@ -13,17 +13,17 @@ view: account {
 
     case: {
       when: {
-        sql: ${number_of_employees} BETWEEN 0 AND 500 ";;
+        sql: ${number_of_employees} BETWEEN 0 AND 500 ;;
         label: "Small Business"
       }
 
       when: {
-        sql: ${number_of_employees} BETWEEN 501 AND 1000 ";;
+        sql: ${number_of_employees} BETWEEN 501 AND 1000 ;;
         label: "Mid-Market"
       }
 
       when: {
-        sql: ${number_of_employees} > 1000 ";;
+        sql: ${number_of_employees} > 1000 ;;
         label: "Enterprise"
       }
 
@@ -231,7 +231,7 @@ view: opportunity {
   dimension_group: close {
     type: time
     timeframes:[date,week,month,raw]
-    sql: ${TABLE}."closedddate"";;
+    sql: ${TABLE}."CloseDate";;
   }
 
   dimension: days_open {
