@@ -1,5 +1,5 @@
 view: opportunityhistory {
-  sql_table_name: salesforce_to_postgresql.sf_opportunityhistory" ;;
+  sql_table_name: salesforce_to_postgresql.sf_opportunityhistory ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: slug_history {
-  sql_table_name: salesforce_to_postgresql.sf_Slug_History" ;;
+  sql_table_name: salesforce_to_postgresql.sf_Slug_History ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: opportunity {
-  sql_table_name: salesforce_to_postgresql.sf_opportunity" ;;
+  sql_table_name: salesforce_to_postgresql.sf_opportunity ;;
 
   dimension: id {
     primary_key: yes

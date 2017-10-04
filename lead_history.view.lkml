@@ -1,5 +1,5 @@
 view: lead_history {
-  sql_table_name: salesforce_to_postgresql.sf_LeadHistory" ;;
+  sql_table_name: salesforce_to_postgresql.sf_LeadHistory ;;
 
   dimension: id {
     primary_key: yes

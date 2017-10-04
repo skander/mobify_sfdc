@@ -1,5 +1,5 @@
 view: campaign_member {
-  sql_table_name: salesforce_to_postgresql.sf_CampaignMember" ;;
+  sql_table_name: salesforce_to_postgresql.sf_CampaignMember ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: _sdc_rejected {
-  sql_table_name: salesforce_to_postgresql._sdc_rejected" ;;
+  sql_table_name: salesforce_to_postgresql._sdc_rejected ;;
 
   dimension_group: _sdc_rejected {
     type: time

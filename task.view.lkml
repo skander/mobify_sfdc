@@ -1,5 +1,5 @@
 view: task {
-  sql_table_name: salesforce_to_postgresql.sf_task" ;;
+  sql_table_name: salesforce_to_postgresql.sf_task ;;
 
   dimension: id {
     primary_key: yes

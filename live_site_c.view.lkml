@@ -1,5 +1,5 @@
 view: live_site_c {
-  sql_table_name: salesforce_to_postgresql.sf_live_site_c" ;;
+  sql_table_name: salesforce_to_postgresql.sf_live_site_c ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: executive_business_review_c {
-  sql_table_name: salesforce_to_postgresql.sf_executive_business_review_c" ;;
+  sql_table_name: salesforce_to_postgresql.sf_executive_business_review_c ;;
 
   dimension: id {
     primary_key: yes

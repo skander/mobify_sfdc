@@ -1,5 +1,5 @@
 view: lead {
-  sql_table_name: salesforce_to_postgresql.sf_lead" ;;
+  sql_table_name: salesforce_to_postgresql.sf_lead ;;
 
   dimension: id {
     primary_key: yes

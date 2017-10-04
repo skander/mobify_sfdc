@@ -1,5 +1,5 @@
 view: contact_history {
-  sql_table_name: salesforce_to_postgresql.sf_ContactHistory" ;;
+  sql_table_name: salesforce_to_postgresql.sf_ContactHistory ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: slug_c {
-  sql_table_name: salesforce_to_postgresql.sf_Slug_c" ;;
+  sql_table_name: salesforce_to_postgresql.sf_Slug_c ;;
 
   dimension: id {
     primary_key: yes
