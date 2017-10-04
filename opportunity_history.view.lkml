@@ -1,10 +1,10 @@
 view: opportunity_history {
-  sql_table_name: salesforce_to_postgresql.sf_OpportunityHistory ;;
+  sql_table_name: salesforce_to_postgresql.sf_OpportunityHistory" ;;
 
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
   dimension_group: _sdc_batched {
@@ -18,7 +18,7 @@ view: opportunity_history {
       quarter,
       year
     ]
-    sql: ${TABLE}._sdc_batched_at ;;
+    sql: ${TABLE}."_sdc_batched_at" ;;
   }
 
   dimension_group: _sdc_received {
@@ -32,27 +32,27 @@ view: opportunity_history {
       quarter,
       year
     ]
-    sql: ${TABLE}._sdc_received_at ;;
+    sql: ${TABLE}."_sdc_received_at" ;;
   }
 
   dimension: _sdc_sequence {
     type: number
-    sql: ${TABLE}._sdc_sequence ;;
+    sql: ${TABLE}."_sdc_sequence" ;;
   }
 
   dimension: _sdc_table_version {
     type: number
-    sql: ${TABLE}._sdc_table_version ;;
+    sql: ${TABLE}."_sdc_table_version" ;;
   }
 
   dimension: amount {
     type: number
-    sql: ${TABLE}.Amount ;;
+    sql: ${TABLE}."Amount" ;;
   }
 
   dimension: attributes__type {
     type: string
-    sql: ${TABLE}.attributes__type ;;
+    sql: ${TABLE}."attributes__type" ;;
   }
 
   dimension_group: close {
@@ -66,12 +66,12 @@ view: opportunity_history {
       quarter,
       year
     ]
-    sql: ${TABLE}.CloseDate ;;
+    sql: ${TABLE}."CloseDate" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -85,43 +85,43 @@ view: opportunity_history {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: currency_iso_code {
     type: string
-    sql: ${TABLE}.CurrencyIsoCode ;;
+    sql: ${TABLE}."CurrencyIsoCode" ;;
   }
 
   dimension: expected_revenue {
     type: number
-    sql: ${TABLE}.ExpectedRevenue ;;
+    sql: ${TABLE}."ExpectedRevenue" ;;
   }
 
   dimension: forecast_category {
     type: string
-    sql: ${TABLE}.ForecastCategory ;;
+    sql: ${TABLE}."ForecastCategory" ;;
   }
 
   dimension: is_deleted {
     type: yesno
-    sql: ${TABLE}.IsDeleted ;;
+    sql: ${TABLE}."IsDeleted" ;;
   }
 
   dimension: opportunity_id {
     type: string
     # hidden: yes
-    sql: ${TABLE}.OpportunityId ;;
+    sql: ${TABLE}."OpportunityId" ;;
   }
 
   dimension: probability {
     type: number
-    sql: ${TABLE}.Probability ;;
+    sql: ${TABLE}."Probability" ;;
   }
 
   dimension: stage_name {
     type: string
-    sql: ${TABLE}.StageName ;;
+    sql: ${TABLE}."StageName" ;;
   }
 
   dimension_group: system_modstamp {
@@ -135,7 +135,7 @@ view: opportunity_history {
       quarter,
       year
     ]
-    sql: ${TABLE}.SystemModstamp ;;
+    sql: ${TABLE}."SystemModstamp" ;;
   }
 
   measure: count {

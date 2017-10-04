@@ -1,10 +1,10 @@
 view: campaignmember {
-  sql_table_name: salesforce_to_postgresql.sf_campaignmember ;;
+  sql_table_name: salesforce_to_postgresql.sf_campaignmember" ;;
 
   dimension: id {
     primary_key: yes
     type: string
-    sql: ${TABLE}.Id ;;
+    sql: ${TABLE}."Id" ;;
   }
 
   dimension_group: _sdc_batched {
@@ -18,7 +18,7 @@ view: campaignmember {
       quarter,
       year
     ]
-    sql: ${TABLE}._sdc_batched_at ;;
+    sql: ${TABLE}."_sdc_batched_at" ;;
   }
 
   dimension_group: _sdc_received {
@@ -32,49 +32,49 @@ view: campaignmember {
       quarter,
       year
     ]
-    sql: ${TABLE}._sdc_received_at ;;
+    sql: ${TABLE}."_sdc_received_at" ;;
   }
 
   dimension: _sdc_sequence {
     type: number
-    sql: ${TABLE}._sdc_sequence ;;
+    sql: ${TABLE}."_sdc_sequence" ;;
   }
 
   dimension: _sdc_table_version {
     type: number
-    sql: ${TABLE}._sdc_table_version ;;
+    sql: ${TABLE}."_sdc_table_version" ;;
   }
 
   dimension: attributes__type {
     type: string
-    sql: ${TABLE}.attributes__type ;;
+    sql: ${TABLE}."attributes__type" ;;
   }
 
   dimension: campaign_id {
     type: string
     # hidden: yes
-    sql: ${TABLE}.CampaignId ;;
+    sql: ${TABLE}."CampaignId" ;;
   }
 
   dimension: campaign_member_lead_source__c {
     type: string
-    sql: ${TABLE}.Campaign_Member_Lead_Source__c ;;
+    sql: ${TABLE}."Campaign_Member_Lead_Source__c" ;;
   }
 
   dimension: campaign_member_territory__c {
     type: string
-    sql: ${TABLE}.Campaign_Member_Territory__c ;;
+    sql: ${TABLE}."Campaign_Member_Territory__c" ;;
   }
 
   dimension: contact_id {
     type: string
     # hidden: yes
-    sql: ${TABLE}.ContactId ;;
+    sql: ${TABLE}."ContactId" ;;
   }
 
   dimension: created_by_id {
     type: string
-    sql: ${TABLE}.CreatedById ;;
+    sql: ${TABLE}."CreatedById" ;;
   }
 
   dimension_group: created {
@@ -88,12 +88,12 @@ view: campaignmember {
       quarter,
       year
     ]
-    sql: ${TABLE}.CreatedDate ;;
+    sql: ${TABLE}."CreatedDate" ;;
   }
 
   dimension: currency_iso_code {
     type: string
-    sql: ${TABLE}.CurrencyIsoCode ;;
+    sql: ${TABLE}."CurrencyIsoCode" ;;
   }
 
   dimension_group: date_mql__c {
@@ -107,7 +107,7 @@ view: campaignmember {
       quarter,
       year
     ]
-    sql: ${TABLE}.Date_MQL__c ;;
+    sql: ${TABLE}."Date_MQL__c" ;;
   }
 
   dimension_group: first_responded {
@@ -121,22 +121,22 @@ view: campaignmember {
       quarter,
       year
     ]
-    sql: ${TABLE}.FirstRespondedDate ;;
+    sql: ${TABLE}."FirstRespondedDate" ;;
   }
 
   dimension: has_responded {
     type: yesno
-    sql: ${TABLE}.HasResponded ;;
+    sql: ${TABLE}."HasResponded" ;;
   }
 
   dimension: is_deleted {
     type: yesno
-    sql: ${TABLE}.IsDeleted ;;
+    sql: ${TABLE}."IsDeleted" ;;
   }
 
   dimension: last_modified_by_id {
     type: string
-    sql: ${TABLE}.LastModifiedById ;;
+    sql: ${TABLE}."LastModifiedById" ;;
   }
 
   dimension_group: last_modified {
@@ -150,18 +150,18 @@ view: campaignmember {
       quarter,
       year
     ]
-    sql: ${TABLE}.LastModifiedDate ;;
+    sql: ${TABLE}."LastModifiedDate" ;;
   }
 
   dimension: lead_id {
     type: string
     # hidden: yes
-    sql: ${TABLE}.LeadId ;;
+    sql: ${TABLE}."LeadId" ;;
   }
 
   dimension: status {
     type: string
-    sql: ${TABLE}.Status ;;
+    sql: ${TABLE}."Status" ;;
   }
 
   dimension_group: system_modstamp {
@@ -175,7 +175,7 @@ view: campaignmember {
       quarter,
       year
     ]
-    sql: ${TABLE}.SystemModstamp ;;
+    sql: ${TABLE}."SystemModstamp" ;;
   }
 
   measure: count {

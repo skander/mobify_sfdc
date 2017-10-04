@@ -1,5 +1,5 @@
 view: _sdc_rejected {
-  sql_table_name: salesforce_to_postgresql._sdc_rejected ;;
+  sql_table_name: salesforce_to_postgresql._sdc_rejected" ;;
 
   dimension_group: _sdc_rejected {
     type: time
@@ -12,22 +12,22 @@ view: _sdc_rejected {
       quarter,
       year
     ]
-    sql: ${TABLE}._sdc_rejected_at ;;
+    sql: ${TABLE}."_sdc_rejected_at" ;;
   }
 
   dimension: reason {
     type: string
-    sql: ${TABLE}.reason ;;
+    sql: ${TABLE}."reason" ;;
   }
 
   dimension: record {
     type: string
-    sql: ${TABLE}.record ;;
+    sql: ${TABLE}."record" ;;
   }
 
   dimension: table_name {
     type: string
-    sql: ${TABLE}.table_name ;;
+    sql: ${TABLE}."table_name" ;;
   }
 
   measure: count {
