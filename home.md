@@ -20,7 +20,7 @@
       <div style="padding-left: 20px; padding-bottom: 20px; float:left; width: 50%;">
         <div style="float:left; text-align: left; padding-left: 10px; padding-top: 15px;">
           <p>
-            <span style="font-size: 16px;"><a style="padding: 15px 25px; color: #fff; text-transform: uppercase; background-color: #6089EB; border-radius: 5px; text-decoration:none" href="/dashboards/2">Sales and Marketing Leadership</a></span><br>
+            <span style="font-size: 16px;"><a style="padding: 15px 25px; color: #fff; text-transform: uppercase; background-color: #6089EB; border-radius: 5px; text-decoration:none" href="/dashboards/2">Sales Leadership</a></span><br>
             </p>
         </div>
       </div>
